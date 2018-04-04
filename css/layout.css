@@ -22,8 +22,9 @@ html,body{
 	border-radius: 50%;
 	background-color: white;
 	z-index: 4;
+	cursor: pointer;
 }
-.menu div{
+.menu>div{
 	position: relative;
 	width: 50px;
 	height: 50px;
@@ -33,24 +34,27 @@ html,body{
 	height: 5px;
 	border-radius: 2px;
 	background-color: blue;
-	margin: 5px;
+	margin: 5px 10px;
+}
+.menu div div:first-child{
+	margin-top:12px;
 }
 .menu-close div div:first-child{
+	display: none;
+}
+.menu-close div div:nth-child(2){
 	transform: rotate(-45deg);
 	transform-origin: 50% 50%;
 	position: absolute;
 	top: 17.5px;
-	left: 5px;
-}
-.menu-close div div:nth-child(2){
-	display: none;
+	left: 0px;
 }
 .menu-close div div:nth-child(3){
 	transform: rotate(45deg);
 	transform-origin: 50% 50%;
 	position: absolute;
 	top: 17.5px;
-	left: 5px;
+	left: 0px;
 }
 nav{
 	z-index: 3;
@@ -72,6 +76,12 @@ nav ul{
 	font-size: 18px;
 	line-height: 40px;
 	color: white;
+}
+nav ul li {
+	cursor: pointer;
+}
+nav ul li.choose{
+	color: blue;
 }
 .all-cover{
 	position: fixed;
