@@ -336,3 +336,20 @@ nav ul li.choose{
 p.more{
 	margin-top: 20px; 
 }
+p.more a{
+	text-decoration: none;
+	color: black;
+}
+.work-cover{
+	width: 400px;
+	height: 400px;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.work-cover a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
