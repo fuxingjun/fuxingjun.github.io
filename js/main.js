@@ -1,13 +1,7 @@
 $('.menu').click(function(){
-	if($('.menu').hasClass('menu-close')){//关闭导航
-		$('.menu').removeClass('menu-close');
-		$('nav').hide();
-		$('.all-cover').hide();
-	}else{
-		$('.menu').addClass('menu-close');//打开导航
-		$('nav').show();
-		$('.all-cover').show();
-	}
+	$('.menu').toggleClass('menu-close');
+	$('nav').toggleClass('hidden');
+	$('.all-cover').toggleClass('hidden');
 });
 
 $('nav ul li').click(function(){
