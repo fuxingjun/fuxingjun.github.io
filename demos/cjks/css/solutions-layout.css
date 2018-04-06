@@ -12,7 +12,8 @@ html,body{
 }
 #header{
 	margin: 0 auto;
-	width: 1200px;
+	max-width: 1200px;
+	min-width: 733px;
 	height: 100px;
 }
 #header .logo-box{

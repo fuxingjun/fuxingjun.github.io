@@ -12,7 +12,8 @@ html,body{
 }
 #header{
 	margin: 0 auto;
-	width: 1200px;
+	max-width: 1200px;
+	min-width: 733px;
 	height: 100px;
 }
 #header .logo-box{
@@ -79,6 +80,9 @@ html,body{
 	padding: 40px 0;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+.section img{
+	width: 100%;
 }
 .section p{
 	text-indent: 2em;
