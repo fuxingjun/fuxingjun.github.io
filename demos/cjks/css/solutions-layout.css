@@ -42,92 +42,83 @@ html,body{
 	color: rgb(241,141,0);
 	border-bottom: 2px rgb(241,141,0) solid;
 }
-#focus-img{
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-}
-#focus-img ul{
-	position: absolute;
-	width: 100%;
-	list-style: none;
-}
-#focus-img ul img{
-	position: absolute;
-	display: block;
-	width: 100%;
-}
-#focus-img ol{
-	position: absolute;
-	display: block;
-	width: 70px;
-	bottom: 8px;
-	left: 50%;
-	margin-left: -35px;
-}
-#focus-img ol li{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	margin: 0 2px;
-	background-color: white;
-	border-radius: 50%;
-	cursor: pointer;
-}
-#focus-img ol li.active{
-	background-color: orange;
-}
 .box{
 	text-align: center;
-	padding-top: 20px;
+	position: relative;
+	width: 100%;
 }
-.box h1{
-	margin: 40px 0;
+.PE-box1 img{
+	display: block;
+	width: 100%;
 }
-.b-box1>div{
-	min-width: 1135px;
+.solutions{
+	border-bottom: 1px #e9e9e9 solid;
 }
-.b-box1 img{
-	vertical-align: top;
+.solutions>div{
+	max-width: 1200px;
+	min-width: 700px;
+	margin: 0 auto;
+	padding: 35px 0 5px 0;
+	vertical-align: middle;
 }
-.p-introduce{
+.solutions>div>h1{
+	float: left;
+}
+.solutions>div>div{
+	float: right;
+}
+.solutions>div a{
 	display: inline-block;
-	text-align: left;
-	max-width: 680px;
-	padding-top: 50px;
+	width: 120px;
+	height: 32px;
+	padding: 0 7px;
+	border: 1px gray solid;
+	line-height: 32px;
 }
-.p-introduce h2{
-	margin-bottom: 50px; 
-}
-p{
-	text-indent: 2em;
-	line-height: 27px;
-	margin: 20px 0;
-}
-.b-box2>div{
-	min-width: 944px;
-}
-.b-box2 div img{
-	width: 33%;
-	display: inline-block;
-}
-.b-box3>div{
+.b-box1{
+	padding: 40px 0;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 50px 0;
 }
-.b-box3>div div{
+.solutions-wrap div{
+	position: relative;
+	float: left;
+	width: 372px;
 	text-align: left;
+	margin: 0 30px 40px 0;
 }
-.b-box3 div img{
-	width: 700px;
-	height: 700px;
+.solutions-wrap div:nth-child(3){
+	margin: 0;
 }
-.b-box4 div img{
-	width: 1160px;
-	height: 302px;
+.solutions-wrap div img{
+	width: 372px;
+	height: 220px;
 }
-
+.solutions-wrap div h2{
+	font-size: 14px;
+	color: #333;
+	margin: 15px 0 6px 0;
+}
+.solutions-wrap div p{
+	font-size: 12px;
+	line-height: 24px;
+	color: #999;
+	margin:0;
+}
+.pages{
+	width: 100%;
+	font-size: 12px;
+}
+.pages div div{
+	display: inline-block;
+	border: 1px #ccc solid;
+	padding: 5px;
+	cursor: pointer;
+}
+.pages div input{
+	width: 40px;
+	height: 22px;
+}
 .footer-nav{
 	padding: 40px 0 80px 0;
 	background-color: rgb(248,248,248);

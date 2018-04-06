@@ -1,0 +1,9 @@
+$('.f-right>div').hover(
+	function(){
+		console.log($(this).children().children());
+		$(this).children().children().animate({top:0});
+	},
+	function(){
+		$(this).children().children().animate({top:'120px'});
+	}
+);

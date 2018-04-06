@@ -42,90 +42,17 @@ html,body{
 	color: rgb(241,141,0);
 	border-bottom: 2px rgb(241,141,0) solid;
 }
-#focus-img{
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-}
-#focus-img ul{
-	position: absolute;
-	width: 100%;
-	list-style: none;
-}
-#focus-img ul img{
-	position: absolute;
-	display: block;
-	width: 100%;
-}
-#focus-img ol{
-	position: absolute;
-	display: block;
-	width: 70px;
-	bottom: 8px;
-	left: 50%;
-	margin-left: -35px;
-}
-#focus-img ol li{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	margin: 0 2px;
-	background-color: white;
-	border-radius: 50%;
-	cursor: pointer;
-}
-#focus-img ol li.active{
-	background-color: orange;
-}
 .box{
 	text-align: center;
-	padding-top: 20px;
+	position: relative;
+	width: 100%;
 }
-.box h1{
-	margin: 40px 0;
+.PE-box1 img{
+	display: block;
+	width: 100%;
 }
-.b-box1>div{
-	min-width: 1135px;
-}
-.b-box1 img{
-	vertical-align: top;
-}
-.p-introduce{
-	display: inline-block;
-	text-align: left;
-	max-width: 680px;
-	padding-top: 50px;
-}
-.p-introduce h2{
-	margin-bottom: 50px; 
-}
-p{
-	text-indent: 2em;
-	line-height: 27px;
-	margin: 20px 0;
-}
-.b-box2>div{
-	min-width: 944px;
-}
-.b-box2 div img{
-	width: 33%;
-	display: inline-block;
-}
-.b-box3>div{
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 50px 0;
-}
-.b-box3>div div{
-	text-align: left;
-}
-.b-box3 div img{
-	width: 700px;
-	height: 700px;
-}
-.b-box4 div img{
-	width: 1160px;
-	height: 302px;
+.b-box1{
+	padding: 100px 0;
 }
 
 .footer-nav{
