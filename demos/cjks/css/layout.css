@@ -180,6 +180,7 @@ p{
 }
 .f-right{
 	float: right;
+	margin-right: 80px;
 }
 .f-right>div{
 	position: relative;
