@@ -131,10 +131,10 @@ nav ul li.choose{
 	background: url(../images/bgi03.jpg) no-repeat;
 }
 #skills{
-	background: url(../images/bgi04.jpg) no-repeat;
+	background: url(../images/bgi05.jpg) no-repeat;
 }
 #works{
-	background: url(../images/bgi05.jpg) no-repeat;
+	background: url(../images/bgi04.jpg) no-repeat;
 }
 #contact img{
 	width:32px;
@@ -186,7 +186,7 @@ nav ul li.choose{
 .experience-box{
 	position: relative;
 	width: 760px;
-	height: 500px;
+	height: auto;
 }
 .experience-box h1{
 	margin-bottom: 20px;
@@ -252,6 +252,9 @@ nav ul li.choose{
 	width: 16px;
 	height: 2px;
 	background-color: white;
+}
+.end-time{
+	display: none;
 }
 .skills-list{
 	width: 760px;
@@ -352,4 +355,84 @@ p.more a{
 	color: white;
 	text-decoration: none;
 	font-size: 20px;
+}
+.m-show{
+	display: none;
+}
+@media screen and (max-width: 460px) {
+	.myPic{
+		-webkit-background-size: 8rem 8rem;
+		background-size: 8rem 8rem;
+		width: 8rem;
+		height: 8rem;
+		margin: 1rem auto;
+	}
+	.my_description{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.my_description p{
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+	.my_description i{
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+	.info_box{
+		width: 90%;
+		margin: 1rem auto;
+	}
+	.experience-box h1{
+		margin-bottom: 0.5rem;
+	}
+	.experience-box-left{
+		float: none;
+		width: 90%;
+		text-align: left;
+		margin: 0 auto;
+	}
+	.experience-box-left span{
+		color: white;
+		background-color: red;
+		font-size: 1.4rem;
+	}
+	.experience-box-right{
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+	#experience-1 .experience-box-left{
+		height: 20px;
+		line-height: 20px;
+	}
+	#experience-2 .experience-box-left{
+		height: 20px;
+		line-height: 20px;
+	}
+	.point-style{
+		display: inline-block;
+		position: static;
+		margin-top: 0.6rem;
+	}
+	.point-style b{
+		display: none;
+	}
+	.end-time{
+		display: inline-block;
+	}
+	#skills .m-hide{
+		display: none;
+	}
+	#skills .m-show{
+		display: block;
+		width: 90%;
+		margin: 1em auto;
+		text-align: justify;
+	}
+	#skills .m-show p{
+		font-size: 1.2rem;
+		margin: 0.5em 2px;
+		line-height: 2em;
+	}
 }
