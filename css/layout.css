@@ -360,6 +360,14 @@ p.more a{
 	display: none;
 }
 @media screen and (max-width: 750px) {
+	h1{
+		font-size:2rem;
+		line-height: 2rem;
+	}
+	h2{
+		font-size:1.2rem;
+		line-height: 1.3rem;
+	}
 	.myPic{
 		-webkit-background-size: 8rem 8rem;
 		background-size: 8rem 8rem;
@@ -381,14 +389,14 @@ p.more a{
 	}
 	.info_box{
 		width: 90%;
-		margin: 1rem auto;
+		margin: 0.2rem auto;
 	}
 	.experience-box h1{
 		margin-bottom: 0.5rem;
 	}
 	.experience-box-left{
 		float: none;
-		width: 90%;
+		width: 95%;
 		text-align: left;
 		margin: 0 auto;
 	}
@@ -399,8 +407,9 @@ p.more a{
 	}
 	.experience-box-right{
 		float: none;
-		width: 90%;
+		width: 95%;
 		margin: 0 auto;
+		padding: 1rem;
 	}
 	#experience-1 .experience-box-left{
 		height: 20px;

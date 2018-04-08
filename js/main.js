@@ -1,3 +1,10 @@
+(function () {
+	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		var html = document.documentElement;
+		var width = html.clientWidth;
+		html.style.fontSize = width / 24 + "px";
+	}
+})();
 $('.menu').click(function(){
 	$('.menu').toggleClass('menu-close');
 	$('nav').toggleClass('hidden');
