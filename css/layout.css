@@ -359,7 +359,7 @@ p.more a{
 .m-show{
 	display: none;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 750px) {
 	.myPic{
 		-webkit-background-size: 8rem 8rem;
 		background-size: 8rem 8rem;
