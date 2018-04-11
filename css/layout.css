@@ -43,7 +43,6 @@ html,body{
 }
 .menu-close div div:first-child{
 	transform: rotate(-45deg);
-	transform-origin: 50% 50%;
 	position: absolute;
 	top: 10.5px;
 	left: 0px;
