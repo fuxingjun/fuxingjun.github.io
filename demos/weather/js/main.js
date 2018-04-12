@@ -1,4 +1,4 @@
-function getGeolocation(){//获取失败率太高
+function getGeolocation(){//获取失败率太高,放弃
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(
 			function(position){
