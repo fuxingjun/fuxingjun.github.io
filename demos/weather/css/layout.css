@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	position: relative;
+	text-align: center;
+	height: 100%;
+	background: linear-gradient(rgb(92,161,255),rgb(140,184,211));
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.clear::after{
+	content: "";
+	display:block;
+	clear: both;
+	width: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+.main{
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 20px;
+	border: 2px white solid;
+	box-shadow: 10px 10px 5px gray;
+}
+.location p{
+	display: inline-block;
+}
+.location p.lon-lat{
+	float: left;
+	margin-left: 10px;
+}
+.location p.country{
+	float: right;
+	margin-right: 10px;
+}
+.weather >div{
+	position: relative;
+	padding: 40px 0;
+}
+.weather >h3{
+	margin: 10px 0;
+}
+.weather >div div{
+	width: 50%;
+	float: left;
+}
+div.tmp{
+	margin-top: 20px;
+}
+div.w-info{
+	position: relative;
+	padding: 10px 0;
+}
+div.w-info div{
+	width: 50%;
+	float: left;
+}
+div.h{
+	text-align: left;
+	margin: 10px;
+	border-bottom: 2px white solid;
+}
+div.f-weather{
+	position: relative;
+	margin-bottom: 5px;
+}
+div.f-weather p{
+	margin-top: 15px;
+}
+div.f-weather div{
+	float: left;
+}
+div.f-weather div:nth-child(1){
+	width: 16.6%;
+}
+div.f-weather div:nth-child(2){
+	width: 33.2%;
+}
+div.f-weather div:nth-child(3){
+	width: 33.2%;
+}
+div.f-weather div:nth-child(4){
+	width: 16.6%;
+}
+div.f-weather div img{
+	width: 60px;
+}
+div.suggestions{
+	text-align: left;
+}
+
+div.suggestions p{
+	margin: 10px 0 10px 20px;
+}
+.data-source{
+	position: relative;
+	top: 20px;
+}
+@media screen and (max-width: 750px){
+	.main{
+		width: 90%;
+	}
+}
