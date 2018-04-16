@@ -40,7 +40,7 @@ $('#focus-img ol li').hover(
 );
 $('.f-right>div').hover(
 	function(){
-		console.log($(this).children().children());
+		// console.log($(this).children().children());
 		$(this).children().children().animate({top:0});
 	},
 	function(){

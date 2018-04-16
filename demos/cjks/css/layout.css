@@ -81,12 +81,14 @@ html,body{
 .box{
 	text-align: center;
 	padding-top: 20px;
+	padding: 5px;
 }
 .box h1{
 	margin: 40px 0;
 }
 .b-box1>div{
-	min-width: 1135px;
+	width: 95%;
+	/*min-width: 1135px;*/
 }
 .b-box1 img{
 	vertical-align: top;
@@ -125,7 +127,8 @@ p{
 	height: 700px;
 }
 .b-box4 div img{
-	width: 1160px;
+	max-width: 1160px;
+	width: 95%;
 	height: 302px;
 }
 
