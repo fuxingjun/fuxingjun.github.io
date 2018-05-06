@@ -19,8 +19,13 @@ function getGeolocation(){//获取失败率太高,放弃
 }
 // console.log(remote_ip_info);
 //直接用和风天气的location=auto_ip获取地址不准确
-var para = "key=e097cc0ef98f4536886ea65640d6c47d&location="+remote_ip_info.city;
-
+if(!remote_ip_info.city){
+	$('body div').hide();
+	$('<h2>获取城市信息失败！<h2>').appendTo($('body'));
+}else{
+	var para = "key=e097cc0ef98f4536886ea65640d6c47d&location="+remote_ip_info.city;
+	getWeather(para);
+}
 function getWeather(para){
 	$.ajax({
 		url:"https://free-api.heweather.com/s6/weather?"+para,
@@ -60,4 +65,3 @@ function getWeather(para){
 		}
 	});
 }
-getWeather(para);
