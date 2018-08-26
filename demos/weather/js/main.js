@@ -1,11 +1,11 @@
-function getGeolocation(){//获取失败率太高,放弃
+function getGeolocation() {//获取失败率太高,放弃
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(
-			function(position){
+			function (position) {
 				console.log(position.coord.longitude);
 				console.log(position.coord.latitude);
 			},
-			function(err){
+			function (err) {
 				console.log(err.code);
 				//0:其它错误
 				// 1：用户拒绝共享位置信息
@@ -13,7 +13,7 @@ function getGeolocation(){//获取失败率太高,放弃
 				// 3：设置了timeout，获取超时
 			}
 		);
-	}else{
+	} else {
 
 	}
 }
@@ -27,13 +27,17 @@ function getGeolocation(){//获取失败率太高,放弃
 // 	var para = "key=e097cc0ef98f4536886ea65640d6c47d&location="+remote_ip_info.city;
 // 	getWeather(para);
 // }
-var para = "key=e097cc0ef98f4536886ea65640d6c47d&location=auto_ip";//新浪接口挂了，暂时用和风
-getWeather(para);
-function getWeather(para){
+
+getWeather();
+function getWeather() {
 	$.ajax({
-		url:"https://free-api.heweather.com/s6/weather?"+para,
-		type:'get',
-		success:function(data){
+		url: "https://free-api.heweather.com/s6/weather",//新浪接口挂了，暂时用和风
+		type: 'post',
+		data: {
+			key: "e097cc0ef98f4536886ea65640d6c47d",
+			location: "auto_ip"
+		},
+		success: function (data) {
 			console.log(data.HeWeather6[0]);
 			//经度：HeWeather6[0].basic.lat
 			//纬度：HeWeather6[0].basic.lon
@@ -41,29 +45,29 @@ function getWeather(para){
 			//实时天气:HeWeather6[0].now
 			//未来天气：HeWeather6[0].daily_forecast
 			//各种生活指数(lifestyle 8位数组)：HeWeather6[0].lifestyle[0].txt;
-			$('p.lon-lat').text("经度："+data.HeWeather6[0].basic.lat+"，纬度："+data.HeWeather6[0].basic.lon);
+			$('p.lon-lat').text("经度：" + data.HeWeather6[0].basic.lat + "，纬度：" + data.HeWeather6[0].basic.lon);
 			$('p.country').text(data.HeWeather6[0].basic.cnty);
 			$('div.location h2').text(data.HeWeather6[0].basic.location);
 			$('div.weather h3').text(data.HeWeather6[0].now.cond_txt);
-			$('div.w-img img')[0].src = "cond_icon_heweather/"+data.HeWeather6[0].now.cond_code+".png";
-			$('div.tmp p').text(data.HeWeather6[0].daily_forecast[0].tmp_min+"~"+data.HeWeather6[0].daily_forecast[0].tmp_max+"℃");
-			$('div.tmp h2').text(data.HeWeather6[0].now.tmp+"℃");
-			$('div.w-info p').eq(0).text(data.HeWeather6[0].now.wind_dir+"  "+data.HeWeather6[0].now.wind_sc+"级");
-			$('div.w-info p').eq(1).text("更新时间："+data.HeWeather6[0].update.loc);
+			$('div.w-img img')[0].src = "cond_icon_heweather/" + data.HeWeather6[0].now.cond_code + ".png";
+			$('div.tmp p').text(data.HeWeather6[0].daily_forecast[0].tmp_min + "~" + data.HeWeather6[0].daily_forecast[0].tmp_max + "℃");
+			$('div.tmp h2').text(data.HeWeather6[0].now.tmp + "℃");
+			$('div.w-info p').eq(0).text(data.HeWeather6[0].now.wind_dir + "  " + data.HeWeather6[0].now.wind_sc + "级");
+			$('div.w-info p').eq(1).text("更新时间：" + data.HeWeather6[0].update.loc);
 
-			
-			$('div.f-weather').each(function(index){
+
+			$('div.f-weather').each(function (index) {
 				$('div.f-weather').eq(index).find('p').eq(0).text(data.HeWeather6[0].daily_forecast[index].date);
 				$('div.f-weather').eq(index).find('p').eq(1).text(data.HeWeather6[0].daily_forecast[index].cond_txt_d);
-				$('div.f-weather').eq(index).find('img')[0].src = "cond_icon_heweather/"+data.HeWeather6[0].daily_forecast[index].cond_code_d+".png";
-				$('div.f-weather').eq(index).find('p').eq(2).text(data.HeWeather6[0].daily_forecast[index].tmp_min+"~"+data.HeWeather6[0].daily_forecast[0].tmp_max+"℃");
+				$('div.f-weather').eq(index).find('img')[0].src = "cond_icon_heweather/" + data.HeWeather6[0].daily_forecast[index].cond_code_d + ".png";
+				$('div.f-weather').eq(index).find('p').eq(2).text(data.HeWeather6[0].daily_forecast[index].tmp_min + "~" + data.HeWeather6[0].daily_forecast[0].tmp_max + "℃");
 			});
 
-			data.HeWeather6[0].lifestyle.forEach(function(value,index){
-				$('div.suggestions').append('<p>'+value.txt+'</p>');
+			data.HeWeather6[0].lifestyle.forEach(function (value, index) {
+				$('div.suggestions').append('<p>' + value.txt + '</p>');
 			});
 		},
-		error:function(err){
+		error: function (err) {
 			$('body div').hide();
 			$('<h2>获取城市信息失败！<h2>').appendTo($('body'));
 		}
