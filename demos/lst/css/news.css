@@ -1,0 +1,36 @@
+/* news_centre begin */
+.news_centre{width: 100%,margin: 0 auto;}
+.news_centre > h6{margin-top: 85px;margin-bottom: 50px;}
+/* news_content begin */
+.news_centre .news_content{background: url(../images/news_bbg.png) no-repeat;}
+.news_centre .news_content ul{overflow: hidden;}
+.news_centre .news_content ul li dl{background: url(../images/news_sprite.png) no-repeat left bottom; 
+	height: 200px;width: 200px;margin-top: 25px;margin-bottom: 25px;
+	float: left;display: block;margin-right: 30px;}
+.news_centre .news_content ul li dl dt{text-align: center;font-size: 78px;font-weight: normal;
+	line-height: 78px;width: 91px;color: #333333;
+	margin: 0 auto;padding-top: 50px;border-bottom: 1px solid #333333;}
+.news_centre .news_content ul li dl dd{text-align: center;font-size: 18px;line-height: 26px;
+	color: #333333;}
+.news_centre .news_content ul li h5{overflow: hidden;font-size: 18px;color: #1475b5;font-weight:normal;
+	margin-top: 52px;margin-bottom: 30px;}
+.news_centre .news_content ul li p{overflow: hidden;font-size: 18px;line-height: 30px;color: #000;}
+.news_centre .news_content ul li span{font-size: 18px;line-height: 30px;color: #1475b5;}
+/*news_centre current effect begin*/
+/* .news_centre .news_content ul li.current{background: rgba(60,60,60,.7);}
+.news_centre .news_content ul li.current dl{background: url(../images/news_sprite.png) no-repeat left top;}
+.news_centre .news_content ul li.current dl dt{color: #fff;border-bottom: 1px solid #fff;}
+.news_centre .news_content ul li.current dl dd{color: #fff;}
+.news_centre .news_content ul li.current h5{color: #f5a921;}
+.news_centre .news_content ul li.current p{color: #fff;}
+.news_centre .news_content ul li.current span{color: #f5a921;} */
+/*news_centre current effect finish*/
+/* news_centre hover begin */
+.news_centre .news_content ul li:hover{background: rgba(60,60,60,.7);}
+.news_centre .news_content ul li:hover dl{background: url(../images/news_sprite.png) no-repeat left top;}
+.news_centre .news_content ul li:hover dl dt{color: #fff;border-bottom: 1px solid #fff;}
+.news_centre .news_content ul li:hover dl dd{color: #fff;}
+.news_centre .news_content ul li:hover h5{color: #f5a921;}
+.news_centre .news_content ul li:hover p{color: #fff;}
+.news_centre .news_content ul li:hover span{color: #f5a921;}
+/* news_centre hover finish */

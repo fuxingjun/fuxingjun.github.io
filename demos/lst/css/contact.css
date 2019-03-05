@@ -1,0 +1,51 @@
+/* contact begin */
+.serv_time{background: url(../images/contact_bg.png) no-repeat;
+	overflow: hidden;display: block;}
+.serv_time .contact_title{padding-top: 100px;margin-bottom: 50px;}
+.serv_time ul{width: 679px;height: 150px;margin:0 auto;}
+/* 第一个圆背景 */
+.serv_time ul li{width: 271px;float: left;display: block;}
+.serv_time ul li div{width:100px;height: 150px;display: block;
+	background: url(../images/contact_yuanbg.png) no-repeat;}
+.serv_time ul li div:first-child{float: left;}
+.serv_time ul li div:first-child+div{float: right;}
+.serv_time ul li div p{width: 100px;font-size: 20px;
+	text-align: center;line-height: 100px;color: #000;}
+.serv_time ul li div span{width: 100px;display: block;margin-top: 35px;
+	font-size: 14px;line-height: 14px;text-align: center;}
+/* 第二个圆背景 */
+.serv_time ul li:first-child+li{float: right;}
+/* 伪元素加横线 + 定位 */
+.serv_time ul li div:first-child{position: relative;}
+.serv_time ul li div:first-child:after{content:'';display: block;background:#2881bb;width: 71px;height: 1px;
+	position: absolute;left:100px;top:48px;}
+.contact_info{width: 522px;margin:0 auto;margin-top: 80px;margin-bottom: 80px;
+	text-align: center;letter-spacing: 2px;}
+.contact_info h5{font-size: 20px;line-height: 32px;font-weight: normal;color: #1475b5;}
+.contact_info p{font-size: 14px;line-height: 21px;color: #000;}
+/* contact_title2 begin */
+.serv_time > h6{margin-bottom: 41px;}
+/* message begin */
+.message{height: 500px;background: url(../images/contact_bgb.png) no-repeat;}
+.message .msg{width: 955px;height: 426px;margin:0 auto;padding-top: 36px;overflow: hidden;}
+.message .msg > img{width: 379px;height: 426px;float: left;display: block;}
+.message .msg > h5{width: 300px;font-size: 18px;color: #fff;font-weight: bold;
+	float: left;display: block;margin-left: 112px;margin-bottom: 16px;}
+/* form begin */
+.message .msg form{width: 460px;float: left;display: block;margin-left: 112px;}
+.message .msg form > label{width: 65px;float: left;display: block;text-align: right;;
+	line-height: 30px;font-size: 16px;color: #fff;}
+.message .msg form input{width: 132px;height: 26px;float: left;display: block;
+	margin-bottom: 10px;margin-right: 15px;padding:0 7px;
+	line-height: 26px;font-family: '微软雅黑';font-size:14px;color:#000;}
+/* 留言板begin */
+.message .msg textarea{width: 375px;height: 190px;resize: none;overflow: hidden;margin-bottom: 10px;}
+.message .msg form img{float: left;display: block;margin-right: 12px;margin-left:40px;cursor: pointer;}
+.message .msg a{float: left;display: block;font-size: 12px;color:#d7d7d7;
+	text-decoration: underline;line-height: 30px;}
+.message .msg button{width: 80px;height: 30px;float: right;display: block;cursor: pointer;
+	margin-top: 30px;margin-left:30px;background: #999999;color: #333333;border: 1px solid #d7d7d7;}
+.message .msg button:hover{background: #1475b5;color:#fff;}
+/* form finish */
+.map{width: 1200px;height:525px;margin:0 auto;
+	margin-top: 100px;margin-bottom:200px;}

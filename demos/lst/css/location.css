@@ -1,0 +1,9 @@
+/* location begin */
+.tou{width: 100%;background: #474747;height: 100px;line-height: 100px;}
+.tou .content h5{float: left;font-size: 24px;color: #fff;font-weight: normal;}
+.tou .content ul{float: right;font-size: 16px;color: #fff;}
+.tou .content ul li{float: left;padding-left: 2px;}
+.tou .content ul li.current a{color: #1475b5;font-weight: bold;}
+.tou .content ul li:hover a{color: #1475b5;font-weight: bold;}
+.tou .content ul li a{color: #fff;}
+/* location finish */

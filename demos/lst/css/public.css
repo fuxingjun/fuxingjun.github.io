@@ -1,0 +1,84 @@
+/*全局样式*/
+body{ padding:0; margin:0; font-family:'微软雅黑';font-size: 12px;background: #fff;}
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,p,div{ padding:0; margin:0}
+ul,li{list-style:none}
+img{border: 0}
+a{text-decoration:none;}
+.clearfloat{ clear:both; height:0; font-size:1px; line-height:0}
+/*图片自适应*/
+img{border:0;max-width:100%;height:auto;height:auto\9;display:block;}
+/*解决ie/firefox 浏览器中，点击一个链接后有一个虚线边框的问题*/
+a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */ 　
+a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */ 　
+a:focus { -moz-outline-style: none; } /* IE不支持 */ 
+a:focus {outline:none; -moz-outline:none;}
+a:active{background：none；}
+/*解决chrome 浏览器，当文本框，多行文本获得焦点的时候，会有一个边框的问题*/
+input,textarea{outline:none;}
+
+/* header开始 */
+.header{width: 100%;margin: 0 auto;background: #000000;}
+.content{width: 1200px;margin: 0 auto;overflow: hidden;}
+/* top开始 */
+.header .top{width: 1200px;margin:0 auto;overflow: hidden;}
+.header .top h4{float: left;color: #fff;font-size: 14px;line-height: 50px;font-weight: normal;}
+.header .top ul{float: right;color: #fff;display: block;padding-right:0;}
+.header .top ul li{float: left;line-height: 50px;padding-left: 40px;font-size: 14px;}
+.header .top ul li span{float: right;}
+.header .top ul li img{float: left;padding-right: 6px;}
+
+/* logo开始 */
+.header .main{background: #141414;margin:0 auto;}
+.header .main .content > a{width: 129px;float: left;height: 80px;}
+.header .main .content ul{float: left;line-height: 80px;margin-left: 180px;}
+.header .main .content ul li{width: 140px;height: 80px;font-size: 17px;
+	background: url(../images/top_fen.png) no-repeat left 25px;float: left;}
+.header .main .content ul li:first-child{background-image: none; }
+.header .main .content ul li a{color: #fff;display: block;width: 100px;height: 80px;text-align: center;
+	border-top:4px solid #141414;margin: 0 auto;}
+.header .main .content ul li.current a{border-top: 4px solid #116cba;}
+.header .main .content ul li:hover a{border-top: 4px solid #116cba;}
+.header .main .content form{float: right;width: 170px; height: 30px;margin-top:25px;
+	border: 1px solid #4e4e4e;border-radius: 10px;background:#141414;
+	behavior:url(pie.htc);}
+	/* 
+		表单元素
+		字体大小
+		字体
+		字体颜色
+		行高
+		padding：0 5-7px 文本和边框的距离
+ 	*/
+.header .main .content form input[type='text']{width: 121px;height: 20px;margin-top: 4px;
+	float: left;display: block;background: #141414;border: none;
+	font-size: 12px;font-family: '微软雅黑';color: #fff;line-height: 20px;padding: 0 7px;}
+.header .main .content form input[type='image']{width: 18px; height: 18px;
+	margin-top: 6px;
+	display: block;float: left;}
+/* header结束 */
+
+/* more public style begin */
+.more > a{display: block;width: 107px;height: 38px;background: #1475b5;
+	font-size: 14px;color: #fff;text-align: center;line-height: 38px;text-transform: uppercase;}
+/* more public style finish */
+
+
+/* footer开始 */
+.footer{width: 100%;background: #141414;margin: 0 auto;}
+.footer .content{width: 1200px;padding-top:53px;background: #141414;}
+/* menu开始 */
+.footer .content .menu{float: left;display: block;}
+.footer .content .menu dl{float: left;display: block;margin-right: 125px;}
+.footer .content .menu dl dt{font-size: 16px;}
+.footer .content .menu dl dt dd{font-size: 14px;width: 75px;}
+.footer .content .menu a{color: #fff;line-height: 30px;}
+.footer .content .menu ul{height: 119px;float: left;color: #fff;font-size: 16px;display: block;}
+.footer .content .menu ul li{line-height: 32px;}
+.footer .content .menu ul li img{float: left;margin-top: -7px;padding-right: 6px;}
+/* menu结束 */
+.footer .content .code{float: right;display: block;}
+.footer .content .code img{margin:0 auto;}
+.footer .content .code p{color: #fff;font-size: 16px;padding-top: 15px;padding-bottom: 38px;
+	text-align: center;}
+.footer > p{width: 100%;line-height: 50px;margin:0 auto;text-align: center;background: #000;color: #fff;}
+/* footer结束 */

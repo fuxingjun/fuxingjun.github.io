@@ -1,0 +1,202 @@
+/* central开始 */
+.central {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* banner开始 */
+.central .banner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* pro开始 */
+.central .product {
+    width: 1190px;
+    margin: 0 auto;
+}
+.central .product .title {
+    margin-top: 96px;
+    margin-bottom: 50px;
+}
+.central .product ul {
+    overflow: hidden;
+}
+.central .product ul li {
+    width: 367px;
+    float: left;
+    display: block;
+    padding-top: 23px;
+    padding-left: 20px;
+    border: 1px solid #fff;
+}
+.central .product ul li img {
+    width: 360px;
+}
+.central .product ul li:hover {
+    border: 1px solid #2cb3c0;
+}
+.central .product ul li a {
+    display: block;
+}
+.central .product ul li a h5 {
+    font-size: 16px;
+    color: #1475b5;
+    padding-bottom: 6px;
+}
+.central .product ul li a p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    padding-bottom: 24px;
+    padding-right: 24px;
+    height: 72px;
+    overflow: hidden;
+}
+.central .product ul li a img {
+    padding-bottom: 22px;
+}
+.central .product .more > a {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+/* pro结束 */
+
+/* service开始 */
+.central .service {
+    width: 100%;
+    margin: 0 auto;
+}
+.central .service img {
+    width: 100%;
+    display: block;
+}
+.central .service h2 {
+    font-size: 65px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: -15%;
+}
+.central .service p {
+    font-size: 16px;
+    color: #ededed;
+    width: 696px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+/* service结束 */
+
+/* news开始 */
+.central .news {
+    width: 100%;
+    background: url(../images/news_pro_bg.png) no-repeat;
+    background-size: 100%;
+}
+.central .news .title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.central .news .content > a {
+    width: 501px;
+    height: 592px;
+    float: left;
+    display: block;
+    margin-bottom: 99px;
+}
+.central .news .content ul {
+    width: 610px;
+    margin-left: 80px;
+    float: left;
+    display: block;
+    margin-top: -22px;
+}
+.central .news ul li {
+    float: left;
+    display: block;
+    line-height: 57px;
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 2px dotted #b2b0b0;
+}
+.central .news ul li:first-child + li + li + li + li {
+    padding-top: 70px;
+}
+.central .news ul li a {
+    color: #494949;
+    display: block;
+    overflow: hidden;
+}
+.central .news ul li p {
+    float: left;
+    display: block;
+    color: #494949;
+}
+.central .news ul li span {
+    float: right;
+    display: block;
+    color: #494949;
+}
+.central .news ul li:hover {
+    border-bottom: 2px dotted #2cb3c0;
+}
+.central .news ul li:hover a p {
+    color: #2cb3c0;
+}
+.central .news ul li:hover a span {
+    color: #2cb3c0;
+}
+.central .news .more {
+    width: 107px;
+    height: 38px;
+    float: right;
+    margin-top: 31px;
+    margin-bottom: 99px;
+}
+.central .news .more > a {
+    width: 107px;
+    height: 38px;
+}
+/* news结束 */
+
+/* about开始 */
+.central .about {
+    width: 100%;
+    background: #f0dfd2;
+}
+.central .about .content {
+    width: 1278px;
+    overflow: hidden;
+}
+.central .about .content img {
+    float: left;
+    margin-top: 111px;
+}
+.central .about .content img:first-child {
+    margin-top: 0;
+}
+.central .about .text {
+    margin-top: 80px;
+    margin-right: 25px;
+}
+.central .about .text .title {
+    margin-bottom: 50px;
+}
+.central .about .text .title h2 {
+    background: #f0dfd2;
+}
+.central .about .content .text {
+    width: 718px;
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 145px;
+}
+.central .about .content p {
+    line-height: 33px;
+    font-size: 16px;
+    color: #704829;
+    text-indent: 2em;
+}
+/* about结束 */

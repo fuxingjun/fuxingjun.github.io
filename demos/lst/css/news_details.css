@@ -1,0 +1,16 @@
+/* news_content begin */
+.news_centre{width: 100%,margin: 0 auto;border-bottom: 1px solid #c7c7c7;}
+.news_centre > h6{margin-top: 85px;margin-bottom: 50px;}
+/* content begin */
+.container > .content{margin-top: 50px;}
+.container > .content > h4{text-align: center;color: #1475b5;font-size: 18px;line-height: 18px;margin-bottom:30px;}
+.container > .content > b{float: left;font-size: 14px;font-weight: normal;color:#999999;
+	width: 500px;margin-bottom: 25px;}
+.container > .content > span{float: right;display: block;font-size: 14px;color:#999999;}
+.container > .content > p{float: left;font-size: 14px;color: #333333;text-indent: 2em;
+	line-height: 25px;margin-top: 25px;}
+.container > .content > img{width:100%;padding-top: 50px;padding-bottom: 9px;}
+.flip{height: 135px;margin-bottom: 200px;border-bottom: 1px solid #c7c7c7;}
+.flip a{display: block;width: 1200px;margin:0 auto;padding-top: 27px;font-size: 14px;color:#666666;}
+.flip .prev{margin-top: 60px;border-top: 1px solid #c7c7c7;}
+.flip a:hover{color: #1475b5;}

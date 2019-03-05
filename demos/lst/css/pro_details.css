@@ -1,0 +1,37 @@
+/* pro_centre begin */
+.pro_centre{width: 100%,margin: 0 auto;border-bottom: 1px solid #707070;}
+.pro_centre > h6{margin-top: 85px;margin-bottom: 50px;}
+/* pro_details_main begin */
+/* left begin*/
+.container .pro_details_main{width: 607px;height: 485px;float: left;display: block;
+	margin-top: 100px;padding-bottom: 60px;position: relative;overflow: hidden;}
+.container .pro_details_main img{width: 607px;height: 485px;}
+/* ul圆圈定位 */
+.container .pro_details_main .quan{width: 200px;position: absolute;left: 50%;top: 50%;
+	margin-left: -100px;margin-top: -130px;}
+/* 圆圈透明阴影 */
+.container .pro_details_main .quan{width: 200px;height: 200px;
+	border-radius: 100px;
+	background: rgba(0,0,0,.5);}
+.container .pro_details_main .quan p{color: #d6d4d4;font-size: 16px;text-align: center;line-height: 28px;}
+.container .pro_details_main .quan p:first-child{padding-top: 40px;}
+/* left finish */
+/* right begin */
+.container > .content{border-bottom: 1px solid #707070;}
+.container > .content h5{margin-top: 100px;padding-left: 73px;height: 41px;overflow: hidden;
+	font-size: 18px;font-weight: bold;color: #333333;}
+.container > .content > ul{padding-left: 73px;overflow: hidden;}
+.container > .content > ul li{font-weight:normal;font-size: 16px;color: #333333;line-height: 40px;}
+.container > .content ol{padding-left: 73px;overflow: hidden;margin-top: 35px;}
+.container > .content ol > li{font-weight:normal;font-size: 16px;color: #333333;line-height: 40px;}
+/* right finish */
+/* flip begin */
+.container .flip{width: 1200px;margin: 0 auto;margin-top: 50px;margin-bottom: 200px;}
+.container .flip h5{font-size: 18px;font-weight: bold;color: #333333;}
+.container .flip ul{overflow: hidden;margin-top: 50px;}
+.container .flip ul li{float: left;display: block;padding-left: 37px;padding-right: 50px;}
+.container .flip ul li:first-child{padding-left: 50px;}
+.container .flip ul li img{width: 150px;height: 150px;padding-bottom: 13px;}
+.container .flip ul li p{text-align: center;font-size: 16px;color: #333333;}
+/* flip finish */
+/* pro_details_main finish */

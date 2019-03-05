@@ -1,0 +1,50 @@
+/* about_details begin */
+.about_details{width: 100%,margin: 0 auto;}
+
+/* introduce begin */
+.about_details .introduce{background: #fff;}
+.about_details .introduce .content > h6{margin-top: 100px;margin-bottom: 50px;}
+.about_details .introduce .intro_details{overflow: hidden;}
+.about_details .introduce .intro_details img{float: left;display: block;}
+/* introduce右边 */
+.text{width: 465px;float: right;}
+.text:before,.text:after{content:"";display: block;width: 86px;height: 75px;}
+.text:before{float: right;
+	border-top:6px solid #f5a52d;border-right: 6px solid #f5a52d;}
+.text h2{padding-top: 114px;margin-bottom: 38px;font-size: 36px;
+	color: #cccccc;text-transform: uppercase;}
+.text h3{float: left;width: 303px;margin-bottom: 13px;margin-right: 106px;
+	line-height: 30px;font-size: 20px;color: #3a72ae;margin-left: 60px;}
+.text p{float: left;font-size: 16px;color: #333333;line-height: 25px;
+	width: 369px;margin-left: 60px;}
+.text:after{float: left;margin-top: 7px;
+	border-bottom:6px solid #f5a52d;border-left: 6px solid #f5a52d;}
+/* introduce finish */
+
+/* cul begin */
+.about_details .cul{background: #fff;}
+.about_details .cul > h6{margin-top: 99px;margin-bottom: 50px;}
+.about_details .cul .cul_details{background: url(../images/about_cul_bg.png) no-repeat;height: 600px;}
+.about_details .cul .cul_details .cul_nav{float: left;display: block;width: 465px;}
+.about_details .cul .cul_details .cul_nav > h2{padding-top: 122px;padding-left: 10px;margin-top: 57px;
+	background: url(../images/about_cul_bg01.png) no-repeat left top;
+	margin-bottom: 38px;font-size: 36px;color: #cccccc;text-transform: uppercase;}
+.about_details .cul .cul_details .cul_nav > h3{line-height: 21px;
+	padding-left: 75px;margin-bottom: 20px;font-size: 20px;color: #f5a921;}
+.about_details .cul .cul_details .cul_nav > ul{
+	background: url(../images/about_cul_bg02.png) no-repeat right bottom;
+	padding-left: 75px;padding-bottom: 115px;padding-right:150px;margin-bottom:57px;}
+.about_details .cul .cul_details .cul_nav > ul li{font-weight: none;font-size: 16px;line-height: 25px;
+	color: #fff;}
+.about_details .cul .cul_details img{float: right;display: block;margin-top:57px;
+	border: 20px solid #fff;}
+/* cul finish */
+
+/* design begin */
+.about_details .design{background: #fff;}
+.about_details .design .content > h6{margin-top: 100px;margin-bottom: 50px;}
+.about_details .design .design_details{overflow: hidden;margin-bottom: 200px;}
+.about_details .design .design_details > img{float: left;display: block;}
+.about_details .design .design_details > .text:after{float: left;margin-top: 32px;
+	border-bottom:6px solid #f5a52d;border-left: 6px solid #f5a52d;}
+/* design finish */

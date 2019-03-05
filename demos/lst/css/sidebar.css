@@ -1,0 +1,11 @@
+/* sidebar begin */
+.sidebar{width: 720px;margin: 0 auto;overflow: hidden;}
+.sidebar li{width: 118px;height: 46px;float:left;display: block;
+	line-height: 46px;text-align: center;margin: 0 60px 50px;font-size: 18px;
+	border:1px solid #333333;}
+.sidebar li a{color: #000;}
+.sidebar li.current{background: #1475b5;border:1px solid #fff;}
+.sidebar li.current a{color: #fff;}
+.sidebar li:hover{background: #1475b5;border:1px solid #fff;}
+.sidebar li:hover a{color: #fff;}
+/* sidebar finish */

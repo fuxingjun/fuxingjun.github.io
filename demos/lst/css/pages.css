@@ -1,0 +1,12 @@
+/* page begin */
+.page{width: 585px;margin: 0 auto;overflow: hidden;}
+.page li{float: left;margin-top:50px;margin-bottom:198px;width: 40px;height: 40px;
+	font-size: 16px;text-align: center;line-height: 40px;margin-right: 16px;
+	background: #dddddd;border:1px solid #fff;}
+.page .prev,.page .next{width: 100px;height: 40px;}
+.page li a{color: #666666;display: block;}
+.page li.on{background: #317fb9;}
+.page li.on a{color:#fff;}
+.page li:hover{background: #317fb9;}
+.page li:hover a{color:#fff;}
+/* page finish */

@@ -1,0 +1,54 @@
+/* pro_centre begin */
+.pro_centre{width: 100%,margin: 0 auto;}
+.pro_centre > h6{margin-top: 85px;margin-bottom: 50px;}
+
+/* product picture information begin */
+.container > .content ul{width: 1220px;margin:0 auto;overflow: hidden;}
+.container > .content ul li{border:1px solid #fff;margin:5px;
+	position: relative;float: left;display: block;}
+.container > .content ul li img{display: block;width: 393px;height: 400px;}
+/* 灰黑色阴影效果 */
+.container > .content ul li p{width: 393px;height: 50px;text-align: center;line-height: 50px;
+	position: absolute;bottom: 0;left: 0;background: rgba(0,0,0,.85);
+	-pie-background: rgba(0,0,0,.85);behavior:url(pie.htc);}
+.container > .content ul li p a{font-size: 16px;color: #999999;display: block;text-decoration: none;}
+.container > .content ul li > a{width: 393px;height: 350px;display: block;
+	background: #000;opacity: 0.35;filter: alpha(opacity=30);
+	position: absolute;top:0;left:0;display: none;}
+/* hover灰黑色阴影效果 */
+.container > .content ul li:hover > a{display: block;}
+.container > .content ul li:hover p{background:rgba(17,166,245,.5);
+	-pie-background: rgba(17,166,245,.5);behavior:url(pie.htc);}
+.container > .content ul li:hover p a{color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* page begin */
+.body > ul{width: 585px;margin: 0 auto;overflow: hidden;}
+.body > ul li{float: left;margin-top:50px;margin-bottom:198px;width: 40px;height: 40px;
+	font-size: 16px;text-align: center;line-height: 40px;margin-right: 16px;
+	background: #dddddd;border:1px solid #fff;}
+.body .prev,.body .next{width: 100px;height: 40px;}
+.body > ul li a{color: #666666;}
+.body > ul li.on{background: #317fb9;}
+.body > ul li.on a{color:#fff;}
+.body > ul li:hover{background: #317fb9;}
+.body > ul li:hover a{color:#fff;}
+/* page finish */
