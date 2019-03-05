@@ -12,7 +12,7 @@
 
 /* pro开始 */
 .central .product {
-    width: 1190px;
+    width: 1200px;
     margin: 0 auto;
 }
 .central .product .title {
@@ -23,7 +23,7 @@
     overflow: hidden;
 }
 .central .product ul li {
-    width: 367px;
+    width: 375px;
     float: left;
     display: block;
     padding-top: 23px;
